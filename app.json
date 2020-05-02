@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "template.react-native",
-    "slug": "template.react-native",
+    "slug": "template-react-native",
     "platforms": [
       "ios",
       "android",
