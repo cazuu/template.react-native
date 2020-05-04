@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import { AppLoading } from 'expo'
 import * as Font from 'expo-font'
 import { Ionicons } from '@expo/vector-icons'
-import { Text, View } from 'react-native'
+import { AppNavigator } from './navigations'
+
+import 'moment/locale/ja'
 
 type Props = {
   skipLoadingScreen: boolean
@@ -41,9 +43,7 @@ export const Root: React.FC<Props> = ({ skipLoadingScreen }) => {
           onFinish={handleFinishLoading}
         />
       ) : (
-        <View>
-          <Text>Open up App.tsx to start working on your app!</Text>
-        </View>
+        <AppNavigator />
       )}
     </>
   )
